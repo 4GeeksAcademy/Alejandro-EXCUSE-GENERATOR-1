@@ -17,6 +17,12 @@ window.onload = function() {
   let AccionRandom = accion[Math.floor(Math.random() * accion.length)];
   let QueRandom = que[Math.floor(Math.random() * que.length)];
   let CuandoRandom = cuando[Math.floor(Math.random() * cuando.length)];
+
+  let excusa =
+    QuienRandom + " " + AccionRandom + " " + QueRandom + " " + CuandoRandom;
+
+  document.querySelector("#excusa").innerHTML = excusa;
+
   console.log(
     QuienRandom + " " + AccionRandom + " " + QueRandom + " " + CuandoRandom
   );
