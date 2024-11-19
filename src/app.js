@@ -13,17 +13,29 @@ window.onload = function() {
   let que = ["mis deberes", "mi comida", "mis apuntes"];
   let cuando = ["antes de clase", "mientras dormía", "cuando estudiaba"];
 
-  let QuienRandom = quien[Math.floor(Math.random() * quien.length)];
-  let AccionRandom = accion[Math.floor(Math.random() * accion.length)];
-  let QueRandom = que[Math.floor(Math.random() * que.length)];
-  let CuandoRandom = cuando[Math.floor(Math.random() * cuando.length)];
+  let QuienRandomIndex = quien[Math.floor(Math.random() * quien.length)];
+  let AccionRandomIndex = accion[Math.floor(Math.random() * accion.length)];
+  let QueRandomIndex = que[Math.floor(Math.random() * que.length)];
+  let CuandoRandomIndex = cuando[Math.floor(Math.random() * cuando.length)];
 
   let excusa =
-    QuienRandom + " " + AccionRandom + " " + QueRandom + " " + CuandoRandom;
+    QuienRandomIndex +
+    " " +
+    AccionRandomIndex +
+    " " +
+    QueRandomIndex +
+    " " +
+    CuandoRandomIndex;
 
   document.querySelector("#excusa").innerHTML = excusa;
 
   console.log(
-    QuienRandom + " " + AccionRandom + " " + QueRandom + " " + CuandoRandom
+    QuienRandomIndex +
+      " " +
+      AccionRandomIndex +
+      " " +
+      QueRandomIndex +
+      " " +
+      CuandoRandomIndex
   );
 };
